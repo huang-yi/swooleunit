@@ -1,0 +1,19 @@
+dist: trusty
+sudo: false
+
+language: php
+
+php:
+  - '7.2'
+  - '7.3'
+  - '7.4'
+
+before_install:
+  - pecl channel-update pecl.php.net
+  - printf "\n" | pecl install swoole
+
+install:
+  - travis_retry composer install --no-suggest --prefer-dist
+
+script:
+  - ./swooleunit

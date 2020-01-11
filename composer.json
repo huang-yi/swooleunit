@@ -1,0 +1,28 @@
+{
+    "name": "huang-yi/swooleunit",
+    "description": "Run PHPUnit on Swoole.",
+    "keywords": ["swoole", "phpunit", "testing"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/huang-yi/swooleunit/issues",
+        "source": "https://github.com/huang-yi/swooleunit"
+    },
+    "authors": [
+        {
+            "name": "Huang Yi",
+            "email": "coodeer@163.com"
+        }
+    ],
+    "require": {
+        "ext-swoole": "^4.0",
+        "phpunit/phpunit": "<9.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HuangYi\\SwooleUnit\\Tests\\": "tests"
+        }
+    },
+    "bin": [
+        "swooleunit"
+    ]
+}
