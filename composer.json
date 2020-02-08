@@ -15,7 +15,7 @@
     ],
     "require": {
         "ext-swoole": "^4.0",
-        "phpunit/phpunit": "<9.0"
+        "phpunit/phpunit": "<10.0"
     },
     "autoload-dev": {
         "psr-4": {
