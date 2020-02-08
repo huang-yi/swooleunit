@@ -15,5 +15,8 @@ before_install:
 install:
   - travis_retry composer install --no-suggest --prefer-dist
 
+before_script:
+  - phpenv config-rm xdebug.ini
+
 script:
   - ./swooleunit
